@@ -1,0 +1,133 @@
+.header
+
+  &__top
+    background-color: $red
+    padding: 10px 11px
+    text-align: center
+    color: $white
+    font-size: 10px
+    line-height: 14px
+    border-top: 1px solid $red_light
+    border-bottom: 1px solid $red_light
+
+    @media $tablet
+      font-size: 9px
+
+
+    @media $desktop_small
+      display: flex
+      justify-content: space-between
+      padding: 10px 20px
+      height: 60px
+
+      font-size: 12px
+
+    @media $desktop
+      padding: 10px 72px
+      font-size: 16px
+
+  .phone
+    font-weight: bold
+
+    @media $tablet
+      display: flex
+      justify-content: center
+      align-items: center
+
+    &__icon
+      display: none
+
+      @media $tablet
+        display: block
+        margin-right: 5px
+        width: 12px
+        height: 13px
+        background-size: cover
+        background-repeat: no-repeat
+        background-position: center center
+        background-image: url('../img/general/header-phone.png')
+
+      @media $desktop_small
+        width: 31px
+        height: 32px
+        margin-right: 7px
+
+  .email
+    font-weight: bold
+
+    @media $tablet
+      display: flex
+      justify-content: center
+      align-items: center
+
+    &__icon
+      display: none
+
+      @media $tablet
+        display: block
+        margin-right: 5px
+        width: 11px
+        height: 8px
+        background-size: cover
+        background-repeat: no-repeat
+        background-position: center center
+        background-image: url('../img/general/header-email.png')
+
+      @media $desktop_small
+        width: 28px
+        height: 20px
+        margin-right: 7px
+
+
+  .address
+
+    @media $tablet
+      display: flex
+      justify-content: center
+      align-items: center
+
+
+    &__icon
+      display: none
+
+      @media $tablet
+        display: block
+        margin-right: 5px
+        width: 7px
+        height: 12px
+        background-size: cover
+        background-repeat: no-repeat
+        background-position: center center
+        background-image: url('../img/general/header-address.png')
+
+      @media $desktop_small
+        width: 18px
+        height: 31px
+        margin-right: 7px
+        
+  &__mobile-bar
+    display: flex
+    justify-content: space-between
+    align-items: center
+    background-color: $white
+    height: 44px
+    padding: 0 21px 0 17px
+    
+    @media $desktop_small
+      display: none
+
+  &__burger
+    background-image: url('../img/general/header-burger.png')
+    background-size: cover
+    background-position: center center
+    background-repeat: no-repeat
+    width: 32px
+    height: 19px
+
+  &__search-mob
+    background-image: url('../img/general/header-search.png')
+    background-size: cover
+    background-position: center center
+    background-repeat: no-repeat
+    width: 20px
+    height: 21px
