@@ -1,0 +1,121 @@
+.footer
+  flex 0 0 auto
+  background-color: $gray3
+  position: relative
+
+  &__copyright
+    padding: 8px 20px
+
+    font-size: 10px
+    line-height: 14px
+    color: $black
+    text-align: center
+
+  &__feedback
+
+    .feedback
+
+      &__opener
+        position: absolute
+        bottom: 100%
+        right: 35px
+        margin-bottom: 4px
+        background-color: $red
+        border-radius: 10px
+        padding: 10px 8px
+
+        font-size: 12px
+        line-height: 18px
+        text-transform: uppercase
+        color: $white
+        text-align: center
+
+      &__form
+        position: absolute
+        right: 2px
+        bottom: 100%
+        margin-bottom: 25px
+        width: 305px
+        padding: 34px 34px 8px 32px
+        background-color: $blue_dark2
+
+      &__input
+        margin-bottom: 7px
+
+        input, textarea
+          width: 100%
+          background-color: $blue_dark3
+          font-size: 12px
+          color: $white
+          font-weight: bold
+          padding: 6px 11px
+
+          &::placeholder
+            font-size: 12px
+            height: 18px
+            color: $white
+            font-weight: bold
+
+        textarea
+          border: none
+          height: 70px
+
+      &__personal
+        display: flex
+        margin-bottom: 15px
+
+        .personal
+
+          &__link
+            margin-left: 10px
+
+            color: $white
+            font-size: 12px
+            line-height: 18px
+            text-decoration: underline
+
+        input
+          display: none
+
+          &:checked
+
+            & + label
+              position: relative
+
+              &::after
+                content: ''
+                display: block
+                background-image: url('../img/general/checkbox.png')
+                background-size: cover
+                background-position: center center
+                background-repeat: no-repeat
+                width: 12px
+                height: 12px
+                position: absolute
+                top: 2px
+                left: 2px
+
+        label
+          &::before
+            content: ''
+            width: 16px
+            height: 16px
+            display: block
+            background-color: $blue_dark3
+            flex-shrink: 0
+            flex-grow: 0
+
+        a
+          display: flex
+
+      &__btn
+
+        button
+          padding: 5px 18px
+          background-color: $red
+          display: inline-block
+
+          color: $white
+          font-weight: bold
+          font-size: 12px
+          line-height: 18px

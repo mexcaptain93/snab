@@ -1,7 +1,29 @@
 header.header
     .header__mobile-bar
         .header__burger
-        .header__search-mob
+        .header__menu-mob.menu
+            ul.menu__list
+                li.menu__item
+                    a(href='#') О компании
+                li.menu__item.menu__item_active
+                    a(href='#') Каталог
+                li.menu__item
+                    a(href='#') Доставка и оплата
+                li.menu__item
+                    a(href='#') Госзаказ
+                li.menu__item
+                    a(href='#') Новости
+                li.menu__item
+                    a(href='#') Контакты
+
+
+        .header__search-mob.search-mob
+            .search-mob__btn
+            .search-mob__form
+                form
+                    input(type='text').search-mob__input
+                    button.search-mob__button
+
     .header__top
         .header__phone.phone
             .phone__icon
@@ -15,3 +37,43 @@ header.header
             .address__icon
             .address__link
                 a(href='#') 196105, г.Санкт-Петербург, ул. Кузнецовская, дом 52, корп.8 литер Ж, помещение 11Н, комн. 2
+    .header__bottom
+        .header__logo
+            a(href='#')
+                img(src='/static/img/general/logo.png' alt='Твой снабженец')
+        .header__menu.menu
+            ul.menu__list
+                li.menu__item.menu__item_active
+                    a(href='#') О компании
+                li.menu__item
+                    a(href='#') Каталог
+                    .submenu
+                        ul.submenu__list
+                            li.submenu__item
+                                a(href='#') Кабельно-проводниковая продукция
+                            li.submenu__item
+                                a(href='#') Пожарное оборудование
+                            li.submenu__item
+                                a(href='#') Часофикация
+                            li.submenu__item
+                                a(href='#') Крепёж
+                            li.submenu__item
+                                a(href='#') Сантехническое оборудование
+                            li.submenu__item
+                                a(href='#') Электрика и свет
+                li.menu__item
+                    a(href='#') Доставка и оплата
+                li.menu__item
+                    a(href='#') Госзаказ
+                li.menu__item
+                    a(href='#') Новости
+                li.menu__item
+                    a(href='#') Контакты
+        .header__search.search
+            .search__btn
+            .search__form
+                form
+                    input(type='text').search__input
+                    button.search__button
+
+

@@ -112,7 +112,8 @@
     background-color: $white
     height: 44px
     padding: 0 21px 0 17px
-    
+    position: relative
+
     @media $desktop_small
       display: none
 
@@ -124,10 +125,199 @@
     width: 32px
     height: 19px
 
+  &__menu-mob
+    display: none
+    position: absolute
+    top: 0
+    left: 0
+    background-color: $gray2
+    padding: 24px 2px 21px
+    text-align: center
+
+    @media $tablet
+      padding: 59px 15px 52px
+
+    .menu
+
+      &__item
+        text-transform: uppercase
+        font-size: 7px
+        line-height: 16px
+        color: $blue_dark
+        font-weight: bold
+
+        @media $tablet
+          font-size: 16px
+          line-height: 36px
+
+        &_active
+          color: $red
+
   &__search-mob
-    background-image: url('../img/general/header-search.png')
-    background-size: cover
-    background-position: center center
-    background-repeat: no-repeat
-    width: 20px
-    height: 21px
+
+    .search-mob
+
+      &__btn
+        background-image: url('../img/general/header-search.png')
+        background-size: cover
+        background-position: center center
+        background-repeat: no-repeat
+        width: 20px
+        height: 20px
+
+      &__form
+        position: absolute
+        top: 4px
+        right: 6px
+        display: none
+
+      &__input
+        width: 265px
+        height: 37px
+        border: none
+        background-color: $gray
+        padding: 10px
+
+      &__button
+        background-image: url('../img/general/header-search.png')
+        background-size: cover
+        background-position: center center
+        background-repeat: no-repeat
+        width: 20px
+        height: 20px
+        border: 0
+        padding: 0
+        position: absolute
+        top: 8px
+        right: 15px
+        background-color: transparent
+        cursor: pointer
+
+  &__bottom
+    display: flex
+    justify-content: center
+    padding: 25px 20px 23px
+
+    @media $tablet
+      padding: 35px 20px
+
+    @media $desktop
+      padding: 107px 72px 101px
+
+  &__logo
+    width: 198px
+    height: 56px
+
+    @media $desktop
+      width: 289px
+      height: 74px
+
+  &__menu
+    display: none
+
+    @media $desktop_small
+      display: block
+      margin-top: 13px
+      margin-left: 40px
+
+    .menu
+
+      &__list
+        display: flex
+
+      &__item
+        margin-right: 25px
+        position: relative
+
+        text-transform: uppercase
+        color: $blue_dark
+        font-size: 16px
+        font-weight: bold
+        transition: .3s color ease
+
+        &_active
+          color: $red
+
+        @media $desktop
+          font-size: 24px
+
+        &:hover
+          color: $red
+
+          & > .submenu
+            display: block
+
+    .submenu
+      display: none
+      position: absolute
+      top: 100%
+      left: -20px
+      width: 320px
+      padding: 20px
+      background-color: $white
+
+      &__item
+        margin-bottom: 10px
+
+        font-size: 14px
+        color: $blue_dark
+        transition: .3s color ease
+
+        &:hover
+          color: $red
+
+  &__search
+    display: none
+
+    @media $desktop_small
+      display: block
+      margin-top: 13px
+      flex-grow: 1
+      position: relative
+      width: 20px
+
+    @media $desktop
+      margin-top: 19px
+
+    .search
+
+      &__btn
+        margin: 0 15px 0 auto
+        background-image: url('../img/general/header-search.png')
+        background-size: cover
+        background-position: center center
+        background-repeat: no-repeat
+        width: 20px
+        height: 20px
+        cursor: pointer
+
+      &__form
+        position: absolute
+        top: -8px
+        right: 0
+        display: none
+
+        @media $desktop
+          right: -5px
+
+      &__input
+        width: 265px
+        height: 37px
+        border: none
+        background-color: $gray
+        padding: 10px
+
+      &__button
+        background-image: url('../img/general/header-search.png')
+        background-size: cover
+        background-position: center center
+        background-repeat: no-repeat
+        width: 20px
+        height: 20px
+        border: 0
+        padding: 0
+        position: absolute
+        top: 8px
+        right: 15px
+        background-color: transparent
+        cursor: pointer
