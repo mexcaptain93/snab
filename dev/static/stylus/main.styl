@@ -66,11 +66,75 @@ img
 
 .content
 	flex 1 0 auto
+	padding: 0 18px
+	color: $gray_dark2
+	font-size: 14px
+	line-height: 18px
+
+	@media $tablet
+		font-size: 12px
+		padding: 0 28px
+
+	@media $desktop_small
+		font-size: 24px
+		line-height: 36px
+
+	p
+		margin-bottom: 18px
+
+		@media $desktop_small
+			margin-bottom: 36px
 
 
+
+.center
+	text-align: center
+
+.like-h1
+	margin-bottom: 36px
+
+	font-size: 14px
+	line-height: 18px
+	font-weight: bold
+	color: $gray_dark
+	text-align: center
+	text-transform: uppercase
+
+	@media $tablet
+		position: relative
+		padding-bottom: 20px
+		margin-bottom: 42px
+
+	@media $desktop_small
+		font-size: 40px
+		line-height: 40px
+		padding-bottom: 50px
+		margin-bottom: 71px
+
+
+
+	&::after
+
+		@media $tablet
+			content: ''
+			width: 80px
+			height: 1px
+			background-color: $red
+			position: absolute
+			left: 50%
+			transform: translateX(-50%)
+			bottom: 0
+
+		@media $desktop_small
+			width: 306px
+			height: 4px
 //Модули
 @import "modules/modules.styl"
 
+//Компоненты
+@import "components/components.styl"
+
+
 // СТРАНИЦЫ
 // Главная страница
-@import 'pages/index/index.styl'
+@import 'pages/index.styl'
