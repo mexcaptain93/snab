@@ -3,6 +3,7 @@ $(document).ready(function () {
     vendorSlider();
     mobileMenu();
     feedbackFooter();
+    searchForm();
 
 });
 
@@ -55,11 +56,37 @@ function feedbackFooter () {
 
     $(document).click(function(event) {
         target = $(event.target);
-        console.log(feedback, target)
 
         if(!target.closest(feedback).length && target[0] != opener[0] && feedback.is(":visible"))  {
             feedback.hide();
         }
     });
 
+}
+
+function searchForm() {
+    var openerMob = $('.js-search-mob-opener'),
+        searchMob =  $('.js-search-mob'),
+        opener = $('.js-search-opener'),
+        search =  $('.js-search');
+
+    openerMob.on('click', function (e) {
+        e.preventDefault();
+        searchMob.show();
+    });
+
+    opener.on('click', function (e) {
+        e.preventDefault();
+        search.show();
+    });
+
+    $(document).click(function(event) {
+        target = $(event.target);
+        if(!target.closest(search).length && target[0] != opener[0] && search.is(":visible"))  {
+            search.hide();
+        }
+        if(!target.closest(searchMob).length && target[0] != openerMob[0] && searchMob.is(":visible"))  {
+            searchMob.hide();
+        }
+    });
 }
