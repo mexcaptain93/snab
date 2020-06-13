@@ -3,8 +3,8 @@ footer.footer
         span Все права защищены. Любое использование материалов допускается только с согласия ООО "Твой Снабженец"
     .footer__feedback.feedback
         .feedback__opener
-            a(href='#') Оставить запрос
-        .feedback__form
+            a(href='#').js-feedback-opener Оставить запрос
+        .feedback__form.js-feedback
             form
                 .feedback__input
                     input(type='text' placeholder='Ваше имя *')
@@ -21,4 +21,4 @@ footer.footer
                     label(for='checkbox-personal')
                     a(href='#' target='_blank').personal__link Я даю согласие на обработку персональных данных
                 .feedback__btn
-                    button Отправить
+                    a Отправить

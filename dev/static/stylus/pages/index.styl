@@ -15,13 +15,13 @@
       margin-bottom: 120px
 
 .vendors
-  padding: 0 10px
+  padding: 0
 
   @media $desktop_small
     margin-bottom: 100px
 
   @media $tablet
-    padding: 0
+    padding: 0 20px
 
   &__item
     display: flex !important
@@ -32,6 +32,10 @@
 
     @media $desktop_small
       height: 90px
+
+    a
+      max-height: 100%
+      max-width: 100%
 
     img
       margin: 0 auto
@@ -50,7 +54,7 @@
 
     @media $tablet
       top: calc(50% - 12px)
-      left: 0
+      left: -20
       background-image: url('../img/general/slider-prev-big.png')
       width: 13px
       height: 23px
@@ -69,7 +73,7 @@
 
     @media $tablet
       top: calc(50% - 12px)
-      right: 0
+      right: -20
       background-image: url('../img/general/slider-next-big.png')
       width: 13px
       height: 23px
