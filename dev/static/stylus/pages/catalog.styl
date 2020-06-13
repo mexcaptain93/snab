@@ -17,7 +17,6 @@
     @media $desktop
       padding-left: 160px
 
-
   .categories
 
     &__list
@@ -101,7 +100,7 @@
       @media $tablet
         max-width: none
         width: calc((100% - 135px) / 2)
-        margin: 0 135px 20px 0
+        margin: 0 86px 20px 0
 
       @media $desktop
         width: 430px
@@ -127,6 +126,7 @@
         height: 185px
 
       @media $desktop_small
+        margin-bottom: 30px
         box-shadow: 2px 3px 4px 0 rgba(0, 0, 0, 0.35)
 
       @media $desktop
@@ -137,6 +137,11 @@
       line-height: 22px
       color: $blue_dark4
       font-weight: bold
+
+  .product
+    @extends .catalog .subcat
+
+
 
   .breadcrumbs
     display: none
@@ -160,3 +165,34 @@
       font-size: 11px
       line-height: 22px
       color: $gray3
+
+      @media $desktop_small
+        font-size: 18px
+        line-height: 36px
+
+  &_category
+
+    .catalog
+
+      &__wrap
+
+        @media $desktop_small
+          padding-top: 60px
+          position: relative
+
+      &__left
+
+        @media $desktop_small
+          display: flex
+          flex-direction: column-reverse
+
+      &__breadcrumbs
+
+        @media $desktop_small
+          position: absolute
+          top: 0
+          left: 215px
+          display: block
+
+        @media $desktop
+          left: 315px

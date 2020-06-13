@@ -1,0 +1,52 @@
+extends ../layout/main
+
+block variables
+    - var title = 'Категория'
+    - var pageClass = 'catalog catalog_category'
+
+block content
+    .catalog__wrap
+        .catalog__left
+            .catalog__categories.categories
+                ul.categories__list
+                    li.categories__item
+                        a(href='#') Кабельно-проводниковая продукция
+                    li.categories__item
+                        a(href='#') Пожарное оборудование
+                    li.categories__item
+                        a(href='#') Часофикация
+                    li.categories__item
+                        a(href='#') Крепёж
+                    li.categories__item
+                        a(href='#') Сантехническое оборудование
+                    li.categories__item
+                        a(href='#') Электрика и свет
+            .catalog__breadcrumbs.breadcrumbs
+                ul.breadcrumbs__list
+                    li.breadcrumbs__item
+                        a(href='#') Пожарное оборудование
+                    li.breadcrumbs__item
+                        a(href='#') Модули пожаротушения
+                    li.breadcrumbs__item
+                        a(href='#') Баллоны и кронштейны
+        .catalog__right
+            .catalog__goods.goods
+                ul.goods__list
+                    li.goods__item.product
+                        a(href='#')
+                            .product__img
+                                img(src='/static/img/content/category-1.jpg')
+                            .product__name
+                                span Баллон ИТ-128, емк. 26,8 л.
+                    li.goods__item.product
+                        a(href='#')
+                            .product__img
+                                img(src='/static/img/content/category-2.jpg')
+                            .product__name
+                                span Кронштейн баллона NVC 52/106/147/180л
+                    li.goods__item.product
+                        a(href='#')
+                            .product__img
+                                img(src='/static/img/content/category-3.jpg')
+                            .product__name
+                                span Кронштейн для баллона 26,8л
