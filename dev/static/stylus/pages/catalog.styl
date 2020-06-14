@@ -4,6 +4,8 @@
     @media $desktop_small
       display: flex
       align-items: flex-start
+      padding-top: 60px
+      position: relative
 
   &__left
     margin-bottom: 51px
@@ -138,8 +140,7 @@
       color: $blue_dark4
       font-weight: bold
 
-  .product
-    @extends .catalog .subcat
+  
 
 
 
@@ -149,8 +150,14 @@
     @media $tablet
       display: block
 
+
     @media $desktop_small
-      display: none
+      position: absolute
+      top: 0
+      left: 215px
+
+    @media $desktop
+      left: 315px
 
     &__list
       display: flex
@@ -172,13 +179,10 @@
 
   &_category
 
+    .product
+      @extends .catalog .subcat
+
     .catalog
-
-      &__wrap
-
-        @media $desktop_small
-          padding-top: 60px
-          position: relative
 
       &__left
 
@@ -186,13 +190,104 @@
           display: flex
           flex-direction: column-reverse
 
-      &__breadcrumbs
 
-        @media $desktop_small
-          position: absolute
-          top: 0
-          left: 215px
-          display: block
+
+  &_product
+
+    .product
+      padding: 0 12px
+
+      color: $blue_dark5
+
+      @media $tablet 
+        padding: 0 38px
+
+      @media $desktop
+        padding: 0
+
+      &__image-name
+
+        @media $tablet
+          display: flex
+          flex-direction: column-reverse
+          margin-right: 40px
 
         @media $desktop
-          left: 315px
+          margin-right: 165px
+
+      &__main
+
+        @media $tablet
+          display: flex
+          align-items: flex-start
+          margin-bottom: 55px
+
+      &__img
+        margin-bottom: 20px
+        box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.35)
+
+        @media $tablet
+          max-width: 250px
+          margin-bottom: 0
+
+        @media $desktop
+          max-width: 500px
+
+      &__name
+        margin-bottom: 30px
+
+        font-size: 12px
+        line-height: 22px
+        font-weight: bold
+
+        @media $tablet
+          font-size 14px
+          line-height 24px
+
+        @media $desktop
+          font-size: 24px
+          line-height: 36px
+          
+        
+      &__price
+        margin-bottom: 25px
+        font-weight: bold
+        font-size: 16px
+        line-height: 18px
+        text-transform: uppercase
+
+        @media $desktop
+          font-size: 24px
+          line-height: 36px    
+      
+      &__misc
+        margin-bottom: 40px
+
+        font-size: 14px
+        line-height: 22px
+
+        @media $tablet
+          margin-bottom: 0
+
+        @media $desktop
+          font-size: 18px
+          line-height: 36px
+
+        p
+          margin-bottom: 0
+
+      &__descr
+        font-size: 14px
+        line-height: 24px
+
+        @media $tablet
+          font-size: 14px
+          line-height: 36px
+
+        @media $desktop 
+          font-size: 18px
+          line-height: 36px
+
+      &__subheading
+        text-transform: uppercase
+        font-weight: bold

@@ -1,0 +1,55 @@
+extends ../layout/main
+
+block variables
+    - var title = 'Карточка товара'
+    - var pageClass = 'catalog catalog_product'
+
+block content
+    .catalog__wrap
+        .catalog__left
+            .catalog__categories.categories
+                ul.categories__list
+                    li.categories__item
+                        a(href='#') Кабельно-проводниковая продукция
+                    li.categories__item
+                        a(href='#') Пожарное оборудование
+                    li.categories__item
+                        a(href='#') Часофикация
+                    li.categories__item
+                        a(href='#') Крепёж
+                    li.categories__item
+                        a(href='#') Сантехническое оборудование
+                    li.categories__item
+                        a(href='#') Электрика и свет
+            .catalog__breadcrumbs.breadcrumbs
+                ul.breadcrumbs__list
+                    li.breadcrumbs__item
+                        a(href='#') Пожарное оборудование
+                    li.breadcrumbs__item
+                        a(href='#') Модули пожаротушения
+                    li.breadcrumbs__item
+                        a(href='#') Баллоны и кронштейны
+        .catalog__right
+            .catalog__product.product
+                .product__main
+                    .product__image-name
+                        .product__img
+                            img(src='static/img/content/product.jpg' alt='Баллон')
+                        .product__name
+                            span Баллон ИТ-128, емк. 26,8 л.
+                    .product__params
+                        .product__price
+                            span Цена 5000 Р.
+                        .product__misc
+                            p ХАРАКТЕРИСТИКИ:
+                            p Прочие
+                            p Производитель	:   ИСТА	
+                            p Срок поставки:	по запросу	
+                            p Страна происхождения:	РОССИЯ	
+                            p Базовая единица:	2 шт	
+                            p Производитель:	ИСТА	
+                            p Условия заказа:	Предоплата 100 процентов
+                .product__descr
+                    .product__subheading
+                        span ОПИСАНИЕ ТОВАРА
+                    p Модуль ИТ-128 емк. 26.8л, без весового устройства в составе: ИТ-СС726FE130 1 Баллон ИТ-128 емк. 26.8л ИТ-726FE130 1 Кожух для электоконтактного манометра 0-160 бар 2230002 1 Соленоидный клапан для модуля 2030001 1 Заглушка для патрубка ручного клапана ИТ-3087008B 1 Гибкий шланг 3/4" HG/HF 400 мм 30506070 1 Кронштейн в сборе для баллона 26.8л, диаметр 205мм ИТ306026IS 2 Болт М10x30 б/н 4 Гайка М10 б/н 4    
