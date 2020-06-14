@@ -1,0 +1,82 @@
+.news
+
+    &__item
+        padding-bottom: 30px
+        margin-bottom: 30px
+        border-bottom: 1px solid $gray
+
+        @media $tablet
+            display: flex
+            align-items: center
+
+        @media $desktop_small
+            padding-bottom: 60px
+            margin-bottom: 60px
+
+    .like-h1 
+        padding-bottom: 0
+        
+        &::after 
+            content: none
+
+    .new
+
+        &__img
+            display: none
+
+            @media $tablet
+                display: block
+                flex-grow: 0
+                flex-shrink: 0
+                max-width: 114px
+                margin-right 30px
+
+            @media $desktop_small
+                max-width: 288px
+                margin-right: 36px
+
+        &__date
+            margin-bottom: 15px
+
+            font-size: 9px
+            line-height: 9px
+            font-weight: bold
+            color: $black
+
+            @media $desktop_small
+                margin-bottom: 35px
+                font-size: 24px
+
+        &__name
+            margin-bottom: 10px
+
+            font-size: 14px
+            line-height: 24px
+            color: $blue_dark6
+            font-weight: bold
+
+            @media $tablet
+                font-size: 12px
+                line-height: 18px
+
+            @media $desktop_small
+                font-size: 30px
+                line-height: 48px
+
+        &__text
+            color: $blue_dark6
+            font-size: 12px
+            line-height: 24px
+
+            @media $tablet
+                font-size: 9px
+                line-height: 18px
+
+            @media $desktop_small
+                font-size: 24px
+                line-height: 48px
+
+            p 
+
+                &:last-child 
+                    margin-bottom: 0
