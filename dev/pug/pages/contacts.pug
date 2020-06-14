@@ -1,0 +1,17 @@
+extends ../layout/main
+
+block variables
+	- var title = 'Контакты'
+	- var pageClass = 'contacts'
+
+block content
+	.contacts__img
+		img(src='/static/img/content/contacts.jpg' alt='Контакты')
+	.contacts__wrap
+		.contacts__info
+			h1.contacts__heading Контакты
+			p ООО «Твой Снабженец»
+			p 196105, г.Санкт-Петербург, ул. Кузнецовская, дом 52, корп.8 литер Ж, помещение 11Н, комн. 2
+			p Тел.:+7 (812) 694-92-83, +7(921) 961-03-64 #[br] Почта: #[a(href='mailto:info@tvoisnabjenec.ru') info@tvoisnabjenec.ru]
+		.contacts__map
+			img(src='static/img/content/map.jpg' alt='map').contacts__map-elem
