@@ -1,0 +1,32 @@
+.textpages
+
+    .like-h1, .like-h2
+        padding-bottom: 0
+
+        &::after
+            content: none
+
+    .like-h2 
+
+        @media $desktop 
+            font-size: 24px
+            line-height: 36px
+
+    &__wrap
+        font-size: 16px
+        line-height: 24px
+        color: $blue_dark
+
+        @media $tablet
+            font-size: 14px
+            line-height: 26px
+
+        @media $desktop
+            font-size: 24px
+            line-height: 36px
+
+        p 
+            text-indent: 18px
+
+            @media $tablet
+                text-indent: 40px

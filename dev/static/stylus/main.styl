@@ -108,13 +108,11 @@ img
 		padding-bottom: 20px
 		margin-bottom: 42px
 
-	@media $desktop_small
+	@media $desktop
 		font-size: 40px
 		line-height: 40px
 		padding-bottom: 50px
 		margin-bottom: 71px
-
-
 
 	&::after
 
@@ -128,9 +126,14 @@ img
 			transform: translateX(-50%)
 			bottom: 0
 
-		@media $desktop_small
+		@media $desktop
 			width: 306px
 			height: 4px
+
+.like-h2 
+
+	@extend .like-h1
+
 //Модули
 @import "modules/modules.styl"
 
@@ -143,3 +146,4 @@ img
 @import 'pages/index.styl'
 @import 'pages/catalog.styl'
 @import 'pages/news.styl'
+@import 'pages/textpages.styl'
