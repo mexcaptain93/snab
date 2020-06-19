@@ -13,6 +13,7 @@
 
   &__right
     margin-bottom: 100px
+    flex-grow: 1
 
     @media $desktop_small
       padding-left: 80px
@@ -127,6 +128,9 @@
       margin: 0 auto 5px
       box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.35)
       text-align: center
+      display: flex
+      justify-content: center
+      align-items: center
 
       @media $tablet
         height: 185px
@@ -218,6 +222,7 @@
 
         @media $desktop
           margin-right: 165px
+          max-width: 500px
 
       &__main
 
@@ -229,6 +234,9 @@
       &__img
         margin-bottom: 20px
         box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.35)
+        display: flex
+        justify-content: center
+        align-items: center
 
         @media $tablet
           max-width: 250px
