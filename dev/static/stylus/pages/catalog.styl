@@ -74,7 +74,12 @@
         height: 144px
 
       &_active
-        background-color $red_dark  
+        text-decoration underline
+
+        @media $desktop_small
+          background-color $red_dark 
+          text-decoration none 
+
 
       &:last-child
         margin-bottom: 0
@@ -128,9 +133,15 @@
       margin: 0 auto 5px
       box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.35)
       text-align: center
+<<<<<<< HEAD
       display: flex
       justify-content: center
       align-items: center
+=======
+      display flex
+      justify-content center
+      align-items center
+>>>>>>> bd5288aaa865e03e14c4751d0916a564cb0347d6
 
       @media $tablet
         height: 185px
